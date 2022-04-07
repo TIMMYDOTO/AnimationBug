@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SportDetailsHeaderView" id="iN0-l3-epB" customClass="SportDetailsHeaderView" customModule="TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="594" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0X-LL-OEG">
+                    <rect key="frame" x="0.0" y="0.0" width="594" height="52"/>
+                    <connections>
+                        <action selector="didTapRollup:" destination="iN0-l3-epB" eventType="touchUpInside" id="pMc-b2-sRX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh6-Uu-t7S">
+                    <rect key="frame" x="20" y="15.5" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="l96-JO-0Gx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="I0X-LL-OEG" secondAttribute="trailing" id="0AP-vS-8ey"/>
+                <constraint firstItem="I0X-LL-OEG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Y7-DS-egC"/>
+                <constraint firstAttribute="bottom" secondItem="I0X-LL-OEG" secondAttribute="bottom" id="4ig-ln-zoO"/>
+                <constraint firstItem="I0X-LL-OEG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BGG-z6-m9z"/>
+                <constraint firstItem="Zh6-Uu-t7S" firstAttribute="centerY" secondItem="I0X-LL-OEG" secondAttribute="centerY" id="bq1-1j-kec"/>
+                <constraint firstItem="Zh6-Uu-t7S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="qJK-hS-Dky"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="Zh6-Uu-t7S" id="nHr-Sm-fq5"/>
+            </connections>
+            <point key="canvasLocation" x="-142.02898550724638" y="-389.0625"/>
+        </view>
+    </objects>
+</document>
